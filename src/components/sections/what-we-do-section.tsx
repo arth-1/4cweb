@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { Lightbulb, Rocket, Users } from "lucide-react";
 
 const activities = [
@@ -21,7 +21,7 @@ const activities = [
 
 export function WhatWeDoSection() {
   return (
-    <section id="what-we-do" className="py-24 bg-background">
+    <section id="what-we-do" className="py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">What We Do</h2>
@@ -29,11 +29,26 @@ export function WhatWeDoSection() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
             {activities.map((activity) => (
-                <div key={activity.title} className="glass-card p-8 text-center flex flex-col items-center">
-                    <div className="mb-4">{activity.icon}</div>
-                    <h3 className="text-2xl font-headline font-semibold mb-2">{activity.title}</h3>
-                    <p className="text-foreground/70">{activity.description}</p>
-                </div>
+                <CardContainer key={activity.title} className="inter-var">
+                    <CardBody className="glass-card relative group/card hover:shadow-xl hover:shadow-emerald-500/[0.05] w-full h-auto rounded-xl p-8 border border-white/10 transition-all duration-300">
+                        <CardItem translateZ="50" className="mb-4 flex justify-center">
+                            {activity.icon}
+                        </CardItem>
+                        <CardItem
+                            translateZ="60"
+                            className="text-2xl font-headline font-semibold mb-2 text-center text-white"
+                        >
+                            {activity.title}
+                        </CardItem>
+                        <CardItem
+                            as="p"
+                            translateZ="40"
+                            className="text-foreground/70 text-center"
+                        >
+                            {activity.description}
+                        </CardItem>
+                    </CardBody>
+                </CardContainer>
             ))}
         </div>
       </div>

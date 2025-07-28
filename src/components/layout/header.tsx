@@ -10,12 +10,33 @@ import {
 import { Button } from '../ui/button';
 import { ChevronDown, Menu } from 'lucide-react';
 import { NAV_LINKS, EVENTS_DATA } from '@/lib/data';
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
-import { useState } from 'react';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '../ui/sheet';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < lastScrollY || currentScrollY < 100) {
+        // Scrolling up or at top
+        setIsVisible(true);
+      } else {
+        // Scrolling down
+        setIsVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+    return () => window.removeEventListener('scroll', controlNavbar);
+  }, [lastScrollY]);
 
   const navItems = NAV_LINKS.map((link) => {
     if (link.label === 'Events') {
@@ -32,11 +53,11 @@ export function Header() {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-background/80 backdrop-blur-md border-white/10">
             <DropdownMenuItem asChild>
-              <Link href="/events" className="cursor-pointer">All Events</Link>
+              <Link href="/events" className="cursor-pointer" onClick={() => setIsSheetOpen(false)}>All Events</Link>
             </DropdownMenuItem>
             {EVENTS_DATA.map((event) => (
               <DropdownMenuItem key={event.slug} asChild>
-                <Link href={`/events/${event.slug}`} className="cursor-pointer">{event.name}</Link>
+                <Link href={`/events/${event.slug}`} className="cursor-pointer" onClick={() => setIsSheetOpen(false)}>{event.name}</Link>
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
@@ -47,7 +68,7 @@ export function Header() {
       <Link
         href={link.href}
         key={link.label}
-        className="text-lg font-headline transition-colors hover:text-accent"
+        className="text-lg font-headline transition-colors hover:text-accent text-center w-full py-2"
         onClick={() => setIsSheetOpen(false)}
       >
         {link.label}
@@ -56,7 +77,12 @@ export function Header() {
   });
   
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <header 
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out",
+        isVisible ? "transform translate-y-0" : "transform -translate-y-full"
+      )}
+    >
        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mt-4 flex h-16 items-center justify-between glass-card px-6">
           <Link href="/" className="text-2xl font-bold font-headline text-white">
@@ -70,9 +96,14 @@ export function Header() {
                   <Menu />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-background/90 backdrop-blur-xl border-l-white/10 w-full">
-                <nav className="flex flex-col items-center space-y-8 mt-16">
-                  {navItems}
+                            <SheetContent side="right" className="bg-background/90 backdrop-blur-xl border-l-white/10 w-full">
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <nav className="flex flex-col items-center justify-center space-y-6 mt-20 w-full px-4">
+                  {navItems.map((item, index) => (
+                    <div key={index} className="w-full flex justify-center">
+                      {item}
+                    </div>
+                  ))}
                 </nav>
               </SheetContent>
             </Sheet>

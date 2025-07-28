@@ -10,7 +10,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 export function SponsorsSection() {
   return (
-    <section id="sponsors" className="py-24 bg-background">
+    <section id="sponsors" className="py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Sponsors</h2>

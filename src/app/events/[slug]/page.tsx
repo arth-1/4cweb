@@ -1,9 +1,10 @@
-import { EventCollage } from "@/components/event-collage";
+import { DraggableImageGallery } from "@/components/ui/draggable-image-gallery";
 import { EVENTS_DATA } from "@/lib/data";
 import { notFound } from "next/navigation";
 
-export default function EventDetailPage({ params }: { params: { slug: string } }) {
-    const event = EVENTS_DATA.find(e => e.slug === params.slug);
+export default async function EventDetailPage({ params }: { params: { slug: string } }) {
+    const { slug } = await params;
+    const event = EVENTS_DATA.find(e => e.slug === slug);
 
     if (!event) {
         notFound();
@@ -21,8 +22,9 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                 </div>
 
                 <div className="mb-12">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-8">Event Collage</h2>
-                    <EventCollage imageUrls={event.images} />
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-8">Event Gallery</h2>
+                    <DraggableImageGallery images={event.images} />
+                    <p className="text-center text-foreground/60 mt-4 text-sm">Click and drag to navigate through images</p>
                 </div>
             </div>
         </div>

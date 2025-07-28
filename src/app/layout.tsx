@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
-import { AnimatedBg } from '@/components/animated-bg';
+import { AuroraBackground } from '@/components/ui/aurora-background';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,10 +36,11 @@ export default function RootLayout({
           spaceGrotesk.variable
         )}
       >
-        <AnimatedBg />
-        <Header />
-        <main className="relative z-10">{children}</main>
-        <Footer />
+        <AuroraBackground>
+          <Header />
+          <main className="relative z-10">{children}</main>
+          <Footer />
+        </AuroraBackground>
         <Toaster />
       </body>
     </html>

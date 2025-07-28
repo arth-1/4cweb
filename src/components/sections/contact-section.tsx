@@ -50,10 +50,10 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Get In Touch</h2>
           <p className="text-lg text-foreground/80 mt-2">We&apos;d love to hear from you.</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="glass-card p-8">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 glass-card p-6">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <FormField
                   control={form.control}
                   name="name"
@@ -93,30 +93,30 @@ export function ContactSection() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90">Send Message</Button>
+                <Button type="submit" size="lg" className="w-full px-8 bg-accent hover:bg-accent/90">Send Message</Button>
               </form>
             </Form>
           </div>
-          <div className="flex flex-col justify-center space-y-6">
-            <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-accent mt-1"/>
+          <div className="glass-card p-6 flex flex-col justify-center space-y-6">
+            <div className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
-                    <h3 className="font-headline text-xl font-semibold">Email</h3>
-                    <a href="" className="text-foreground/80 hover:text-accent">Email ID</a>
+                    <h3 className="font-headline text-base font-semibold">Email</h3>
+                    <a href="" className="text-foreground/80 hover:text-accent text-sm break-all">email@example.com</a>
                 </div>
             </div>
-            <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-accent mt-1"/>
+            <div className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
-                    <h3 className="font-headline text-xl font-semibold">Phone</h3>
-                    <p className="text-foreground/80">6969696969</p>
+                    <h3 className="font-headline text-base font-semibold">Phone</h3>
+                    <p className="text-foreground/80 text-sm">+91 6969696969</p>
                 </div>
             </div>
-            <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-accent mt-1"/>
+            <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
-                    <h3 className="font-headline text-xl font-semibold">Address</h3>
-                    <p className="text-foreground/80"> NAHHH no address</p>
+                    <h3 className="font-headline text-base font-semibold">Address</h3>
+                    <p className="text-foreground/80 text-sm leading-relaxed">Koi<br/>Acchi<br/>Jagah</p>
                 </div>
             </div>
           </div>

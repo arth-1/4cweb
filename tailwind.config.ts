@@ -64,6 +64,11 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
+        'aurora-blue': 'hsl(var(--aurora-blue))',
+        'aurora-dark-blue': 'hsl(var(--aurora-dark-blue))',
+        'aurora-purple': 'hsl(var(--aurora-purple))',
+        'aurora-light-blue': 'hsl(var(--aurora-light-blue))',
+        'aurora-cyan': 'hsl(var(--aurora-cyan))',
       },
       borderRadius: {
         lg: 'var(--radius)',
