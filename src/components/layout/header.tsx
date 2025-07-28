@@ -68,7 +68,7 @@ export function Header() {
       <Link
         href={link.href}
         key={link.label}
-        className="text-lg font-headline transition-colors hover:text-accent text-center w-full py-2"
+        className="text-lg font-headline transition-colors hover:text-accent text-center w-48 py-3 px-6 rounded-lg hover:bg-white/5 block mx-auto"
         onClick={() => setIsSheetOpen(false)}
       >
         {link.label}
@@ -98,7 +98,7 @@ export function Header() {
               </SheetTrigger>
                             <SheetContent side="right" className="bg-background/90 backdrop-blur-xl border-l-white/10 w-full">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                <nav className="flex flex-col items-center justify-center space-y-6 mt-20 w-full px-4">
+                <nav className="flex flex-col items-center justify-center space-y-6 mt-20 w-full px-8">
                   {navItems.map((item, index) => (
                     <div key={index} className="w-full flex justify-center">
                       {item}
