@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -89,8 +90,8 @@ export function HeroSection() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-headline font-extrabold tracking-tighter leading-tight"
             >
               Welcome to{' '}
-              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                4C
+              <span className="inline-block align-middle">
+                <Image src="/4clogo.webp" alt="4C Logo" width={180} height={180} className="h-[1.5em] w-auto inline align-middle drop-shadow-lg" priority />
               </span>
             </motion.h1>
 

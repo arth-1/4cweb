@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 import Link from 'next/link';
 import {
   DropdownMenu,
@@ -86,7 +88,7 @@ export function Header() {
        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mt-4 flex h-16 items-center justify-between glass-card px-6">
           <Link href="/" className="text-2xl font-bold font-headline text-white">
-            4C<span className="text-accent">.</span>
+            <Image src="/4clogo.webp" alt="4C Logo" width={60} height={60} className="h-[1.5em] w-auto inline align-middle drop-shadow-lg" priority />
           </Link>
           <nav className="hidden md:flex items-center space-x-8">{navItems}</nav>
           <div className="md:hidden">
