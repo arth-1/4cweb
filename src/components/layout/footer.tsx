@@ -10,13 +10,13 @@ export function Footer() {
             &copy; {new Date().getFullYear()} 4C. All rights reserved. Developed By
           </p>
           <div className="flex items-center space-x-4">
-            <Link href="#" className="text-muted-foreground hover:text-accent transition-colors">
+            <Link href="https://x.com/4CNMIMS25" className="text-muted-foreground hover:text-accent transition-colors">
               <Twitter />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-accent transition-colors">
+            <Link href="https://www.instagram.com/4cnmims/?hl=en" className="text-muted-foreground hover:text-accent transition-colors">
               <Instagram />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-accent transition-colors">
+            <Link href="https://www.linkedin.com/company/4c-nmims/?originalSubdomain=in" className="text-muted-foreground hover:text-accent transition-colors">
               <Linkedin />
             </Link>
           </div>

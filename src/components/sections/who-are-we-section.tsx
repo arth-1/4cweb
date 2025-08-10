@@ -13,7 +13,7 @@ export function WhoAreWeSection() {
                   translateZ="60"
                   className="text-3xl md:text-4xl font-headline font-bold mb-4"
                 >
-                  Who Are We?
+                  What is 4C?
                 </CardItem>
                 <CardItem
                   as="p"

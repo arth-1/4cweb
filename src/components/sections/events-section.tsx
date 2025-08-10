@@ -16,7 +16,7 @@ export function EventsSection() {
     <section id="events" className="py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Upcoming Events</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Events</h2>
           <p className="text-lg text-foreground/80 mt-2">Join us for our next big thing.</p>
         </div>
         <Carousel
