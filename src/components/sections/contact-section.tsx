@@ -102,21 +102,23 @@ export function ContactSection() {
                 <Mail className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
                     <h3 className="font-headline text-base font-semibold">Email</h3>
-                    <a href="" className="text-foreground/80 hover:text-accent text-sm break-all">email@example.com</a>
+                    <a href="" className="text-foreground/80 hover:text-accent text-sm break-all">contact@4cnmims.in</a>
                 </div>
             </div>
             <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
                     <h3 className="font-headline text-base font-semibold">Phone</h3>
-                    <p className="text-foreground/80 text-sm">+91 6969696969</p>
+                    <p className="text-foreground/80 text-sm">+91 93581 72251</p>
+                    <p className="text-foreground/80 text-sm">+91 70216 45731</p>
                 </div>
             </div>
             <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-accent mt-0.5"/>
                 <div>
                     <h3 className="font-headline text-base font-semibold">Address</h3>
-                    <p className="text-foreground/80 text-sm leading-relaxed">Koi<br/>Acchi<br/>Jagah</p>
+                    <p className="text-foreground/80 text-sm leading-relaxed">
+                    4C-MPSTME, NMIMS, V. L. Mehta Road, <br/>Vile Parle, West Mumbai, Maharashtra<br/>400056</p>
                 </div>
             </div>
           </div>
