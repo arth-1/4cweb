@@ -20,8 +20,8 @@ export function WhoAreWeSection() {
                   translateZ="40"
                   className="text-lg text-foreground/80 leading-relaxed"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic eius quia, ipsa, sequi excepturi at distinctio delectus molestias a quidem, qui nobis! Atque, nemo placeat! At repellendus laborum consectetur! 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic eius quia, ipsa, sequi excepturi at distinctio delectus molestias a quidem, qui nobis! Atque, nemo placeat! At repellendus laborum consectetur! 
+                  We are 4C – The Marketing Cell of MPSTME, under the prestigious NMIMS Deemed-to-be University.<br></br>
+                  Since our inception in 2008, we have grown exponentially and established ourselves as a reputed force to be reckoned with in the University. 
                 </CardItem>
               </div>
               <CardItem translateZ="50" className="w-full">

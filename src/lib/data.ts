@@ -8,37 +8,37 @@ export const NAV_LINKS = [
 
 export const EVENTS_DATA = [
   {
-    name: 'Tech Fusion 2024',
-    slug: 'tech-fusion-2024',
-    description: 'An immersive experience into the future of technology and marketing, featuring keynote speakers from industry giants.',
+    name: 'Wings and Roots 2025',
+    slug: 'wings-and-roots-2025',
+    description: 'A competition that challenges students to solve real world business and marketing problems.',
     images: [
       'https://placehold.co/600x400.png',
       'https://placehold.co/600x401.png',
       'https://placehold.co/600x402.png',
       'https://placehold.co/600x403.png',
     ],
-    fullDescription: "Tech Fusion 2024 is our flagship event, bringing together the brightest minds in technology and marketing. This year's event focuses on the synergy between AI-driven marketing strategies and cutting-edge digital platforms. Join us for a series of workshops, panel discussions, and networking opportunities. Learn from experts, connect with peers, and discover the tools that will shape the future of the industry."
+    fullDescription: "A competition that challenges students to solve real world business and marketing problems.."
   },
   {
-    name: 'Marketing Summit',
-    slug: 'marketing-summit',
-    description: 'A deep dive into the latest trends in digital marketing, from SEO to content creation.',
+    name: 'Roulette 2026',
+    slug: 'roulette',
+    description: 'An event that will have an auction for the video game FIFA, and then the teams will compete with the team they made during the auction.',
     images: [
       'https://placehold.co/600x404.png',
       'https://placehold.co/600x405.png',
       'https://placehold.co/600x406.png',
     ],
-    fullDescription: "The annual Marketing Summit is designed for marketing professionals looking to stay ahead of the curve. We explore a wide range of topics including advanced SEO techniques, leveraging social media for brand growth, creating compelling content, and mastering marketing analytics. This summit is your opportunity to gain actionable insights and elevate your marketing game."
+    fullDescription: "An event that will have an auction for the video game FIFA, and then the teams will compete with the team they made during the auction."
   },
   {
-    name: 'Design Workshop',
-    slug: 'design-workshop',
-    description: 'A hands-on workshop focused on UI/UX principles for creating engaging digital experiences.',
+    name: 'DeBattle 2026',
+    slug: 'debattle',
+    description: 'A debate event where the participants debate and also have some power cards they can use.',
     images: [
       'https://placehold.co/600x407.png',
       'https://placehold.co/600x408.png',
     ],
-    fullDescription: "In this interactive Design Workshop, participants will learn the fundamentals of UI/UX design. Guided by experienced designers, you will work on a real-world project, from wireframing and prototyping to creating a high-fidelity user interface. Whether you are a beginner or looking to refine your skills, this workshop provides a collaborative and creative learning environment."
+    fullDescription: "A debate event where the participants debate and also have some power cards they can use."
   },
 ];
 
