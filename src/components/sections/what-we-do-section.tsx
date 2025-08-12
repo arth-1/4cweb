@@ -4,18 +4,8 @@ import { Lightbulb, Rocket, Users } from "lucide-react";
 const activities = [
     {
         icon: <Rocket className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
-    },
-    {
-        icon: <Lightbulb className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
-    },
-    {
-        icon: <Users className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum 3",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
+        title: "Events",
+        description: "We focus on events that inculcate enjoyment as well as contain a generous dose of Marketing related tasks. We also organize workshops and seminars which are respected by industry leaders, academicians and participants alike. In this competitive world, making a lasting impression is important- now more than ever. We believe in helping students learn to hone their skills in this regard so that nothing stops them from achieving their goals!"
     }
 ]
 
