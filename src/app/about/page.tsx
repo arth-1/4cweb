@@ -4,144 +4,136 @@ import { Timeline } from "@/components/ui/timeline";
 
 export default function AboutPage() {
   const timelineData = [
-    {
-      title: "2024",
-      content: (
-        <div>
-          <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
-            Launch of 4C's most ambitious initiatives - revolutionizing digital marketing education and creating industry partnerships that matter.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="4C Workshop 2024"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Marketing Campaign"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Team Collaboration"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Innovation Lab"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
+  {
+    title: "2024",
+    content: (
+      <div>
+        <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
+          Launch of 4C's most ambitious initiatives — revolutionizing digital marketing education and creating industry partnerships that matter.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="https://placehold.co/500x400.png" alt="4C Workshop 2024" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Marketing Campaign" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Team Collaboration" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Innovation Lab" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2023",
+    content: (
+      <div>
+        <p className="mb-6 text-sm md:text-base text-foreground/80 leading-relaxed">
+          Expansion year — 4C established key partnerships and launched mentorship programs connecting students with industry leaders.
+        </p>
+        <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
+          Our focus shifted to bridging creativity and technology, addressing modern marketing education gaps.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="https://placehold.co/500x400.png" alt="Mentorship Program" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Industry Connect" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Creative Workshops" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Tech Integration" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2022",
+    content: (
+      <div>
+        <p className="mb-6 text-sm md:text-base text-foreground/80 leading-relaxed">
+          Continued our marketing education push with campaign teardowns and explainers — helping students decode real-world brand strategy.
+        </p>
+        <ul className="list-disc pl-6 text-foreground/70 space-y-2 mb-6">
+          <li>BookTok trends explainer (Nov 2022)</li>
+          <li>Heinz “Tomato Blood” campaign analysis (Oct 2022)</li>
+          <li>IKEA “Ghar Aa Jao” brand positioning breakdown (Oct 2022)</li>
+          <li>Dove #ReverseSelfie social impact discussion (Nov 2022)</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="https://placehold.co/500x400.png" alt="Editorial 2022" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Campaign Analysis" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Brand Strategy" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Student Research" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2021",
+    content: (
+      <div>
+        <p className="mb-6 text-sm md:text-base text-foreground/80 leading-relaxed">
+          Launch phase of our editorial/knowledge initiative — connecting classroom theory with live campaigns in FMCG, retail, and tech.
+        </p>
+        <ul className="list-disc pl-6 text-foreground/70 space-y-2 mb-6">
+          <li>First wave of marketing breakdowns (Oct–Dec 2021)</li>
+          <li>Introduced student-led research-backed writeups</li>
+          <li>Bridged STP frameworks with trending digital plays</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="https://placehold.co/500x400.png" alt="Launch 2021" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Community Learning" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Framework Application" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Content Sprints" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2008 — Foundation",
+    content: (
+      <div>
+        <p className="mb-4 text-sm md:text-base text-foreground/80 leading-relaxed">
+          The beginning of 4C — four pillars coming together to build a student-led marketing community.
+        </p>
+        <div className="mb-8 space-y-2">
+          <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
+            <span className="text-accent">✅</span> Connect — Building meaningful relationships
+          </div>
+          <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
+            <span className="text-accent">✅</span> Collect — Gathering insights and knowledge
+          </div>
+          <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
+            <span className="text-accent">✅</span> Contest — Challenging conventional thinking
+          </div>
+          <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
+            <span className="text-accent">✅</span> Commence — Taking action that matters
           </div>
         </div>
-      ),
-    },
-    {
-      title: "2023",
-      content: (
-        <div>
-          <p className="mb-6 text-sm md:text-base text-foreground/80 leading-relaxed">
-            Expansion year - 4C established key partnerships and launched comprehensive mentorship programs that connected students with industry leaders.
-          </p>
-          <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
-            Our focus shifted to creating meaningful connections between creativity and technology, bridging the gap in modern marketing education.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Mentorship Program"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Industry Connect"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Creative Workshops"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Tech Integration"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="https://placehold.co/500x400.png" alt="Foundation Year" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Early Team" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="First Initiatives" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
+          <Image src="https://placehold.co/500x400.png" alt="Vision Setting" width={500} height={400}
+            className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
         </div>
-      ),
-    },
-    {
-      title: "Foundation",
-      content: (
-        <div>
-          <p className="mb-4 text-sm md:text-base text-foreground/80 leading-relaxed">
-            The beginning of 4C - where four pillars came together to create something extraordinary.
-          </p>
-          <div className="mb-8 space-y-2">
-            <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
-              <span className="text-accent">✅</span> Connect - Building meaningful relationships
-            </div>
-            <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
-              <span className="text-accent">✅</span> Collect - Gathering insights and knowledge
-            </div>
-            <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
-              <span className="text-accent">✅</span> Contest - Challenging conventional thinking
-            </div>
-            <div className="flex items-center gap-3 text-sm md:text-base text-foreground/70">
-              <span className="text-accent">✅</span> Commence - Taking action that matters
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="4C Foundation"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="First Workshop"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Team Formation"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-            <Image
-              src="https://placehold.co/500x400.png"
-              alt="Vision Planning"
-              width={500}
-              height={400}
-              className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"
-            />
-          </div>
-        </div>
-      ),
-    },
-  ];
+      </div>
+    ),
+  },
+];
+
 
   return (
     <div className="min-h-screen text-white">
@@ -201,7 +193,7 @@ export default function AboutPage() {
                   </CardItem>
                   <CardItem translateZ="3">
                     <div className="bg-white/10 rounded-lg p-4 text-center text-foreground/80 text-sm">
-                      <span className="font-semibold text-accent">Founded:</span> 2022 &mdash; <span className="font-semibold text-primary">Driven by Innovation</span>
+                      <span className="font-semibold text-accent">Founded:</span> 2008 &mdash; <span className="font-semibold text-primary">Driven by Innovation</span>
                     </div>
                   </CardItem>
                 </div>
