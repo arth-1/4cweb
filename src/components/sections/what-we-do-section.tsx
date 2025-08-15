@@ -4,17 +4,17 @@ import { Lightbulb, Rocket, Users } from "lucide-react";
 const activities = [
     {
         icon: <Rocket className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
+        title: "Events 2",
+        description: "We focus on events that inculcate enjoyment as well as contain a generous dose of Marketing related tasks. We also organize workshops and seminars which are respected by industry leaders, academicians and participants alike. In this competitive world, making a lasting impression is important- now more than ever. We believe in helping students learn to hone their skills in this regard so that nothing stops them from achieving their goals!"
     },
     {
-        icon: <Lightbulb className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
+        icon: <Rocket className="w-10 h-10 text-accent" />,
+        title: "Events 3",
+        description: "We focus on events that inculcate enjoyment as well as contain a generous dose of Marketing related tasks. We also organize workshops and seminars which are respected by industry leaders, academicians and participants alike. In this competitive world, making a lasting impression is important- now more than ever. We believe in helping students learn to hone their skills in this regard so that nothing stops them from achieving their goals!"
     },
     {
         icon: <Users className="w-10 h-10 text-accent" />,
-        title: "Lorem Ipsum 3",
+        title: "Building Connections",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
     }
 ]
@@ -24,8 +24,8 @@ export function WhatWeDoSection() {
     <section id="what-we-do" className="py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">What We Do</h2>
-            <p className="text-lg text-foreground/80 mt-2">Pushing the boundaries of marketing innovation. </p>
+            <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Mission</h2>
+            <p className="text-lg text-foreground/80 mt-2">Collect, Connect, Contest, Commence </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
             {activities.map((activity) => (
