@@ -63,12 +63,14 @@ export const MENTORS = [
 ];
 
 export const CORE_MEMBERS = [
-    { name: 'Sophia Miller', title: 'Marketing Coordinator', image: 'https://placehold.co/307x307.png' },
-    { name: 'Liam Brown', title: 'Events Planner', image: 'https://placehold.co/308x308.png' },
-    { name: 'Isabella Wilson', title: 'Content Creator', image: 'https://placehold.co/309x309.png' },
-    { name: 'Noah Jones', title: 'Social Media Manager', image: 'https://placehold.co/310x310.png' },
-    { name: 'Ava Davis', title: 'Graphic Designer', image: 'https://placehold.co/311x311.png' },
-    { name: 'James Taylor', title: 'Web Developer', image: 'https://placehold.co/312x312.png' },
+    { name: 'Corperate Relations & Marketing', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Digital Creatives', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'In-House Creatives', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Logistics & Administration', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Photography', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Public Relations', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Social Media & Content Writing', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
+    { name: 'Technicals', title: 'Core Team', image: 'https://placehold.co/307x307.png' },
 ];
 
 export const SPONSORS = [
