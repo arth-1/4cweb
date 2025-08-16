@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { CORE_MEMBERS, MENTORS, SUPER_CORE_MEMBERS } from '@/lib/data';
+import { CORE_MEMBERS, MENTORS, SUPER_CORE_MEMBERS, CREW } from '@/lib/data';
 import Autoplay from "embla-carousel-autoplay";
 
 function TeamCard({ name, title, image }: { name: string; title: string; image: string }) {
@@ -64,13 +64,26 @@ export default function TeamPage() {
         </Carousel>
       </section>
 
+
       <section id="mentors" className="mb-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Mentors</h2>
-          <p className="text-lg text-foreground/80 mt-2">Guiding us with their expertise.</p>
+          <p className="text-lg text-foreground/80 mt-2">Advisory</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {MENTORS.map((member, index) => (
+            <TeamCard key={index} {...member} />
+          ))}
+        </div>
+      </section>
+
+      <section id="crew" className="mb-24">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">Crew</h2>
+          <p className="text-lg text-foreground/80 mt-2">The backbone of our operations.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          {CREW.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}
         </div>

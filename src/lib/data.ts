@@ -1,3 +1,7 @@
+export const CREW = [
+  { name: 'Alex Johnson', title: 'President', image: 'https://placehold.co/300x300.png' },
+  { name: 'Maria Garcia', title: 'Vice President', image: 'https://placehold.co/301x301.png' },
+];
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/events', label: 'Events' },
@@ -51,7 +55,7 @@ export const SUPER_CORE_MEMBERS = [
 ];
 
 export const MENTORS = [
-    { name: 'Dr. Emily Carter', title: 'Faculty Advisor', image: 'https://placehold.co/305x305.png' },
+    { name: 'Hardik Nagpal', title: 'Advisory', image: '/team/hardik.png' },
     { name: 'Mr. Benjamin Lee', title: 'Industry Mentor', image: 'https://placehold.co/306x306.png' },
 ];
 
