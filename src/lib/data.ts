@@ -47,16 +47,19 @@ export const EVENTS_DATA = [
 ];
 
 export const SUPER_CORE_MEMBERS = [
-    { name: 'Alex Johnson', title: 'President', image: 'https://placehold.co/300x300.png' },
-    { name: 'Maria Garcia', title: 'Vice President', image: 'https://placehold.co/301x301.png' },
-    { name: 'Chen Wei', title: 'Head of Marketing', image: 'https://placehold.co/302x302.png' },
-    { name: 'Fatima Al-Sayed', title: 'Head of Events', image: 'https://placehold.co/303x303.png' },
-    { name: 'David Smith', title: 'Treasurer', image: 'https://placehold.co/304x304.png' },
+    { name: 'Karan Bedi', title: 'President', image: 'https://placehold.co/300x300.png' },
+    { name: 'Anjani Sai ', title: 'Vice President', image: 'https://placehold.co/301x301.png' },
+    { name: 'Ritwik Sharma', title: 'Vice President', image: 'https://placehold.co/302x302.png' },
+    { name: 'Neerav Reddy', title: 'Vice President', image: 'https://placehold.co/303x303.png' },
+    { name: 'Vansh Patel', title: 'Vice President', image: 'https://placehold.co/304x304.png' },
+    { name: 'Sneha Darbarwar', title: 'Vice President', image: 'https://placehold.co/304x304.png' },
+    { name: 'Mithil Gala', title: 'Vice President', image: 'https://placehold.co/304x304.png' },
 ];
 
 export const MENTORS = [
     { name: 'Hardik Nagpal', title: 'Advisory', image: '/team/hardik.png' },
-    { name: 'Mr. Benjamin Lee', title: 'Industry Mentor', image: 'https://placehold.co/306x306.png' },
+    { name: 'Salone Surve', title: 'Advisory', image: 'https://placehold.co/306x306.png' },
+    { name: 'Tej Bachhav', title: 'Advisory', image: 'https://placehold.co/306x306.png' },
 ];
 
 export const CORE_MEMBERS = [

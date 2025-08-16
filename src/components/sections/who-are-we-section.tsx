@@ -27,7 +27,7 @@ export function WhoAreWeSection() {
               <CardItem translateZ="50" className="w-full">
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image 
-                    src="https://placehold.co/600x400.png"
+                    src="/team/core.jpg"
                     alt="Our Team"
                     data-ai-hint="team collaboration"
                     fill

@@ -183,7 +183,7 @@ export default function AboutPage() {
                   <CardItem translateZ="5" className="w-full">
                     <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                       <Image
-                        src="https://placehold.co/600x450.png"
+                        src="/team/aboutus.jpg"
                         alt="About 4C Team"
                         fill
                         className="object-cover"
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   </CardItem>
                   <CardItem translateZ="3">
                     <div className="bg-white/10 rounded-lg p-4 text-center text-foreground/80 text-sm">
-                      <span className="font-semibold text-accent">Founded:</span> 2008 &mdash; <span className="font-semibold text-primary">Driven by Innovation</span>
+                      <span className="font-semibold text-accent">Founded:</span> 2008 &mdash; <span className="font-semibold text-primary">Powered by Creativity</span>
                     </div>
                   </CardItem>
                 </div>

@@ -4,19 +4,20 @@ import { Lightbulb, Rocket, Users } from "lucide-react";
 const activities = [
     {
         icon: <Rocket className="w-10 h-10 text-accent" />,
-        title: "Events 2",
-        description: "We focus on events that inculcate enjoyment as well as contain a generous dose of Marketing related tasks. We also organize workshops and seminars which are respected by industry leaders, academicians and participants alike. In this competitive world, making a lasting impression is important- now more than ever. We believe in helping students learn to hone their skills in this regard so that nothing stops them from achieving their goals!"
+        title: "Mission",
+        description: "To empower the next generation of marketing professionals through hands-on experience, mentorship, and real-world application. We create opportunities for growth through projects, industry-led workshops, and expert guidance, preparing students to confidently tackle the evolving challenges in marketing."
     },
     {
         icon: <Rocket className="w-10 h-10 text-accent" />,
-        title: "Events 3",
-        description: "We focus on events that inculcate enjoyment as well as contain a generous dose of Marketing related tasks. We also organize workshops and seminars which are respected by industry leaders, academicians and participants alike. In this competitive world, making a lasting impression is important- now more than ever. We believe in helping students learn to hone their skills in this regard so that nothing stops them from achieving their goals!"
+        title: "Vision",
+        description: "Creating a future where creativity and technology unite to solve marketing’s toughest problems. We inspire collaboration across disciplines, encourage data-driven approaches, and foster innovation, driving positive change in how marketing solutions are developed and delivered."
     },
-    {
-        icon: <Users className="w-10 h-10 text-accent" />,
-        title: "Building Connections",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolor reiciendis aperiam laboriosam assumenda, neque veritatis eos voluptatem saepe corporis sunt delectus provident qui, quam dolore! Quidem natus architecto tempora?."
-    }
+        {
+        icon: <Rocket className="w-10 h-10 text-accent" />,
+        title: "Values",
+        description: "Valuesntegrity and curiosity guide our journey. We promote inclusivity, collaboration, and ethical leadership, enabling every participant to learn, grow, and excel. Our commitment is to support each other and build a dynamic, resilient marketing community."
+    },
+
 ]
 
 export function WhatWeDoSection() {
