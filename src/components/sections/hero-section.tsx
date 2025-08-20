@@ -133,7 +133,7 @@ export function HeroSection() {
             >
               <MovingBorderButton
                 as={Link}
-                href="https://unstop.com/competitions/wings-and-roots-mukesh-patel-school-of-technology-management-and-engineering-nmims-mumbai-1172170"
+                href="https://unstop.com/college-fests/wings-and-roots-narsee-monjee-institute-of-management-studies-nmims-mumbai-385490 "
                 className="bg-slate-900/90 hover:bg-slate-800/90 text-white font-bold text-sm sm:text-base md:text-lg px-6 py-3 sm:px-8 sm:py-4"
                 containerClassName="w-fit mx-auto"
                 borderClassName="bg-[radial-gradient(var(--aurora-blue)_40%,transparent_60%)]"
