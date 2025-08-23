@@ -35,12 +35,34 @@ export function ContactSection() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Message Sent!',
-      description: "Thanks for reaching out. We'll get back to you soon.",
-    });
-    form.reset();
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(values),
+    })
+      .then(async (res) => {
+        if (res.ok) {
+          toast({
+            title: 'Message Sent!',
+            description: "Thanks for reaching out. We'll get back to you soon.",
+          });
+          form.reset();
+        } else {
+          const data = await res.json();
+          toast({
+            title: 'Error',
+            description: data.error || 'Failed to send message.',
+            variant: 'destructive',
+          });
+        }
+      })
+      .catch(() => {
+        toast({
+          title: 'Error',
+          description: 'Failed to send message.',
+          variant: 'destructive',
+        });
+      });
   }
 
   return (
