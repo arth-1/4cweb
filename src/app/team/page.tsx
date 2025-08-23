@@ -70,25 +70,79 @@ export default function TeamPage() {
     <h2 className="text-3xl md:text-4xl font-headline font-bold">Advisory</h2>
     <p className="text-lg text-foreground/80 mt-2">Our guiding force.</p>
   </div>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-    {MENTORS.map((member, index) => (
-      <TeamCard key={index} {...member} />
-    ))}
-  </div>
+        {/* Desktop grid */}
+        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {MENTORS.map((member, index) => (
+            <TeamCard key={index} {...member} />
+          ))}
+        </div>
+        {/* Mobile carousel */}
+        <div className="sm:hidden">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2500,
+                stopOnInteraction: true,
+              })
+            ]}
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {MENTORS.map((member, index) => (
+                <CarouselItem key={index}>
+                  <TeamCard {...member} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
+        </div>
 </section>
 
 
-      <section id="crew" className="mb-24">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Crew</h2>
-          <p className="text-lg text-foreground/80 mt-2">The backbone of our operations.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+<section id="crew" className="mb-24">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-headline font-bold">Crew</h2>
+    <p className="text-lg text-foreground/80 mt-2">The backbone of our operations.</p>
+  </div>
+        {/* Desktop grid */}
+        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {CREW.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}
         </div>
-      </section>
+        {/* Mobile carousel */}
+        <div className="sm:hidden">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2500,
+                stopOnInteraction: true,
+              })
+            ]}
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {CREW.map((member, index) => (
+                <CarouselItem key={index}>
+                  <TeamCard {...member} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
+        </div>
+</section>
 
       <section id="core-team">
         <div className="text-center mb-12">

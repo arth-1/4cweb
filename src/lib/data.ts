@@ -1,6 +1,7 @@
 export const CREW = [
   { name: 'Nishika Shah', title: 'Crew', image: '/team/Crew/Nishika.webp' },
   { name: 'Mridulika Mukerji', title: 'Crew', image: '/team/Crew/Mridulika.webp' },
+  { name: 'Tanay Shah', title: 'Crew', image: '/team/Crew/Tanay.webp' },
 ];
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -52,7 +53,7 @@ export const SUPER_CORE_MEMBERS = [
 
 export const MENTORS = [
     { name: 'Hardik Nagpal', title: 'Advisory', image: '/team/Advisory/Hardik.webp' },
-    { name: 'Salone Surve', title: 'Advisory', image: '/team/Advisory/Salone.webp' },
+    { name: 'Salonee Surve', title: 'Advisory', image: '/team/Advisory/Salone.webp' },
     { name: 'Tej Bachhav', title: 'Advisory', image: '/team/Advisory/Tej.webp' },
 ];
 

@@ -19,7 +19,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: '4C',
-  description: 'The official website of the 4C Marketing Committee.',
+  description: 'The Marketing Cell.',
 };
 
 export default function RootLayout({

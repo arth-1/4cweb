@@ -140,7 +140,7 @@ export function ContactSection() {
                 <div>
                     <h3 className="font-headline text-base font-semibold">Address</h3>
                     <p className="text-foreground/80 text-sm leading-relaxed">
-                    4C-MPSTME, NMIMS, V. L. Mehta Road, <br/>Vile Parle, West Mumbai, Maharashtra<br/>400056</p>
+                    4C - MPSTME, Bhakti Vedant Marg, opp. Cooper Hospital, <br/>Vile Parle West, Mumbai, Maharashtra<br/>400056</p>
                 </div>
             </div>
           </div>
