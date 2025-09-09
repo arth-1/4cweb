@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: '4C',
+  title: '4C: Marketing Cell of NMIMS',
   description: 'The Marketing Cell.',
 };
 

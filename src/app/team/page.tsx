@@ -11,24 +11,24 @@ import { CORE_MEMBERS, MENTORS, SUPER_CORE_MEMBERS, CREW } from '@/lib/data';
 import Autoplay from "embla-carousel-autoplay";
 
 function TeamCard({ name, title, image }: { name: string; title: string; image: string }) {
-    return (
-        <div className="p-1 h-full">
-            <div className="glass-card overflow-hidden text-center p-6 h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/[0.05]">
-                <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-accent">
-                    <Image
-                    src={image}
-                    alt={name}
-                    data-ai-hint="person portrait"
-                    fill
-                    className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/20 rounded-full" />
-                </div>
-                <h3 className="text-xl font-headline font-bold text-white drop-shadow-lg">{name}</h3>
-                <p className="text-accent drop-shadow-lg">{title}</p>
-            </div>
+  return (
+    <div className="p-1 h-full">
+      <div className="glass-card overflow-hidden text-center p-6 h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/[0.05] max-w-[250px] w-full mx-auto">
+        <div className="relative w-36 h-56 rounded-xl overflow-hidden mb-4 border-2 border-accent p-2 bg-black/10">
+          <Image
+            src={image}
+            alt={name}
+            data-ai-hint="person portrait"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/20 rounded-xl" />
         </div>
-    )
+        <h3 className="text-xl font-headline font-bold text-white drop-shadow-lg">{name}</h3>
+        <p className="text-accent drop-shadow-lg">{title}</p>
+      </div>
+    </div>
+  )
 }
 
 export default function TeamPage() {
