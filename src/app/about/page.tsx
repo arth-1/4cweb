@@ -9,16 +9,16 @@ export default function AboutPage() {
     content: (
       <div>
         <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
-          Another year of growth and innovation through Wings and Roots 2024 and Roulette 2024.
+          Another year of growth and innovation through Wings and Roots 2025 and Roulette 2026.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image src="/about/2025-1.jpg" alt="4C Workshop 2025" width={500} height={400}
+          <Image src="/about/2025-1.webp" alt="4C Workshop 2025" width={500} height={400}
             className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
-          <Image src="/about/2025-2.jpg" alt="Marketing Campaign" width={500} height={400}
+          <Image src="/about/2025-2.webp" alt="Marketing Campaign" width={500} height={400}
             className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
           <Image src="/about/2025-3.jpg" alt="Team Collaboration" width={500} height={400}
             className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
-          <Image src="/about/2025-4.jpg" alt="Innovation Lab" width={500} height={400}
+          <Image src="/about/2025-4.webp" alt="Innovation Lab" width={500} height={400}
             className="h-20 w-full rounded-lg object-cover shadow-lg md:h-44 lg:h-60 border border-white/10"/>
         </div>
       </div>
