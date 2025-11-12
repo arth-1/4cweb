@@ -1,7 +1,7 @@
 export const CREW = [
-  { name: 'Nishika Shah', title: 'Crew', image: '/team/Crew/Nishika.webp' },
-  { name: 'Mridulika Mukerji', title: 'Crew', image: '/team/Crew/Mridulika.webp' },
-  { name: 'Tanay Shah', title: 'Crew', image: '/team/Crew/Tanay.webp' },
+  { name: 'Nishika Shah', title: 'Crew', image: '/team/Crew/Nishika_no_bg.png' },
+  { name: 'Mridulika Mukerji', title: 'Crew', image: '/team/Crew/Mridulika_no_bg.png' },
+  { name: 'Tanay Shah', title: 'Crew', image: '/team/Crew/Tanay_no_bg.png' },
 ];
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -42,37 +42,43 @@ export const EVENTS_DATA = [
 ];
 
 export const SUPER_CORE_MEMBERS = [
-    { name: 'Karan Bedi', title: 'President', image: '/team/SuperCore/Karan.webp' },
-    { name: 'Anjani Sai ', title: 'Vice President', image: '/team/SuperCore/Anjani.webp' },
-    { name: 'Ritwik Sharma', title: 'Vice President', image: '/team/SuperCore/Ritwik.webp' },
-    { name: 'Neerav Reddy', title: 'Vice President', image: '/team/SuperCore/Neerav.webp' },
-    { name: 'Vansh Patel', title: 'Vice President', image: '/team/SuperCore/Vansh.webp' },
-    { name: 'Sneha Darbarwar', title: 'Vice President', image: '/team/SuperCore/Sneha.webp' },
-    { name: 'Mithil Gala', title: 'Vice President', image: '/team/SuperCore/Mithil.webp' },
+    { name: 'Karan Bedi', title: 'President', image: '/team/SuperCore/Karan_no_bg.png' },
+    { name: 'Anjani Sai ', title: 'Vice President', image: '/team/SuperCore/Anjani_no_bg.png' },
+    { name: 'Ritwik Sharma', title: 'Vice President', image: '/team/SuperCore/Ritwik_no_bg.png' },
+    { name: 'Neerav Reddy', title: 'Vice President', image: '/team/SuperCore/Neerav_no_bg.png' },
+    { name: 'Vansh Patel', title: 'Vice President', image: '/team/SuperCore/Vansh_no_bg.png' },
+    { name: 'Sneha Darbarwar', title: 'Vice President', image: '/team/SuperCore/Sneha_no_bg.png' },
+    { name: 'Mithil Gala', title: 'Vice President', image: '/team/SuperCore/Mithil_no_bg.png' },
 ];
 
 export const MENTORS = [
-    { name: 'Hardik Nagpal', title: 'Advisory', image: '/team/Advisory/Hardik.webp' },
-    { name: 'Salonee Surve', title: 'Advisory', image: '/team/Advisory/Salone.webp' },
-    { name: 'Tej Bachhav', title: 'Advisory', image: '/team/Advisory/Tej.webp' },
+    { name: 'Hardik Nagpal', title: 'Advisory', image: '/team/Advisory/Hardik_no_bg.png' },
+    { name: 'Salonee Surve', title: 'Advisory', image: '/team/Advisory/Salone_no_bg.png' },
+    { name: 'Tej Bachhav', title: 'Advisory', image: '/team/Advisory/Tej_no_bg.png' },
 ];
 
 export const CORE_MEMBERS = [
-    { name: 'Corperate Relations & Marketing', title: 'Core Team', image: '/team/Core/CRM.webp' },
-    { name: 'Digital Creatives', title: 'Core Team', image: '/team/Core/DC.webp' },
-    { name: 'In-House Creatives', title: 'Core Team', image: '/team/Core/IHC.webp' },
-    { name: 'Logistics & Administration', title: 'Core Team', image: '/team/Core/Logi.webp' },
-    { name: 'Photography', title: 'Core Team', image: '/team/Core/Photo.webp' },
-    { name: 'Public Relations', title: 'Core Team', image: '/team/Core/PR.webp' },
-    { name: 'Social Media & Content Writing', title: 'Core Team', image: '/team/Core/SMCW.webp' },
-    { name: 'Technicals', title: 'Core Team', image: '/team/Core/Technicals.webp' },
+    { name: 'Corperate Relations & Marketing', title: 'Core Team', image: '/team/Core/CRM_no_bg.png' },
+    { name: 'Digital Creatives', title: 'Core Team', image: '/team/Core/DC_no_bg.png' },
+    { name: 'In-House Creatives', title: 'Core Team', image: '/team/Core/IHC_no_bg.png' },
+    { name: 'Logistics & Administration', title: 'Core Team', image: '/team/Core/Logi_no_bg.png' },
+    { name: 'Photography', title: 'Core Team', image: '/team/Core/Photo_no_bg.png' },
+    { name: 'Public Relations', title: 'Core Team', image: '/team/Core/PR_no_bg.png' },
+    { name: 'Social Media & Content Writing', title: 'Core Team', image: '/team/Core/SMCW_no_bg.png' },
+    { name: 'Technicals', title: 'Core Team', image: '/team/Core/Technicals_no_bg.png' },
 ];
 
 export const SPONSORS = [
-    { name: 'Innovate Corp', logo: 'https://placehold.co/200x100.png' },
-    { name: 'Tech Solutions', logo: 'https://placehold.co/201x101.png' },
-    { name: 'Digital Future', logo: 'https://placehold.co/202x102.png' },
-    { name: 'Marketing Pros', logo: 'https://placehold.co/203x103.png' },
-    { name: 'Creative Minds', logo: 'https://placehold.co/204x104.png' },
-    { name: 'NextGen Tech', logo: 'https://placehold.co/205x105.png' },
+    { name: 'Sponsor 1', logo: '/sponsors/1.png' },
+    { name: 'Sponsor 2', logo: '/sponsors/2.png' },
+    { name: 'Sponsor 3', logo: '/sponsors/3.png' },
+    { name: 'Sponsor 4', logo: '/sponsors/4.png' },
+    { name: 'Sponsor 5', logo: '/sponsors/5.png' },
+    { name: 'Sponsor 6', logo: '/sponsors/6.png' },
+    { name: 'Sponsor 7', logo: '/sponsors/7.png' },
+    { name: 'Sponsor 8', logo: '/sponsors/8.png' },
+    { name: 'Sponsor 9', logo: '/sponsors/9.png' },
+    { name: 'Sponsor 10', logo: '/sponsors/10.png' },
+    { name: 'Sponsor 11', logo: '/sponsors/11.png' },
+    { name: 'Sponsor 12', logo: '/sponsors/12.png' },
 ];
