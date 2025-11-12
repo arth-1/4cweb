@@ -9,7 +9,7 @@ export default function AboutPage() {
     content: (
       <div>
         <p className="mb-8 text-sm md:text-base text-foreground/80 leading-relaxed">
-          Launch of 4C's most ambitious initiatives — revolutionizing digital marketing education and creating industry partnerships that matter.
+          Another year of growth and innovation through Wings and Roots 2024 and Roulette 2024.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image src="https://placehold.co/500x400.png" alt="4C Workshop 2024" width={500} height={400}
