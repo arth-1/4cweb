@@ -17,6 +17,10 @@ export function DraggableImageGallery({ images }: DraggableImageGalleryProps) {
     let autoScrollInterval: NodeJS.Timeout;
     let isAutoScrolling = true;
 
+    // Calculate max percentage based on number of images
+    const imageCount = images.length;
+    const maxPercentage = -((imageCount - 1) * 100 / 3); // Adjust based on visible images
+    
     // Auto-scroll functionality
     const startAutoScroll = () => {
       autoScrollInterval = setInterval(() => {
@@ -26,7 +30,7 @@ export function DraggableImageGallery({ images }: DraggableImageGalleryProps) {
         const nextPercentage = currentPercentage - 0.3; // Slower auto-scroll
         
         // Reset when reaching end for seamless loop
-        if (nextPercentage <= -100) {
+        if (nextPercentage <= maxPercentage) {
           track.dataset.percentage = "0";
           track.dataset.prevPercentage = "0";
         } else {
@@ -69,7 +73,7 @@ export function DraggableImageGallery({ images }: DraggableImageGalleryProps) {
       
       const percentage = (mouseDelta / maxDelta) * -100;
       const nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage || "0") + percentage;
-      const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+      const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), maxPercentage);
       
       track.dataset.percentage = nextPercentage.toString();
       
@@ -113,7 +117,7 @@ export function DraggableImageGallery({ images }: DraggableImageGalleryProps) {
       window.removeEventListener("touchend", onTouchEnd);
       window.removeEventListener("touchmove", onTouchMove);
     };
-  }, []);
+  }, [images]);
 
   return (
     <div className="w-full h-[60vh] overflow-hidden relative rounded-lg bg-transparent">

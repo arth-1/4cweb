@@ -17,7 +17,27 @@ export const EVENTS_DATA = [
     slug: 'wings-and-roots-2025',
     description: 'A competition that challenges students to solve real world business and marketing problems.',
     images: [
-      '/events/Wings and Roots (2).png'
+      '/events/Wings and Roots (2).png',
+      '/WNR/wnr-01.jpg',
+      '/WNR/wnr-02.jpg',
+      '/WNR/wnr-03.jpg',
+      '/WNR/wnr-04.jpg',
+      '/WNR/wnr-06.jpg',
+      '/WNR/wnr-07.jpg',
+      '/WNR/wnr-08.jpg',
+      '/WNR/wnr-09.jpg',
+      '/WNR/wnr-10.jpg',
+      '/WNR/wnr-11.jpg',
+      '/WNR/wnr-12.jpg',
+      '/WNR/wnr-13.jpg',
+      '/WNR/wnr-14.jpg',
+      '/WNR/wnr-15.jpg',
+      '/WNR/wnr-16.jpg',
+      '/WNR/wnr-17.jpg',
+      '/WNR/wnr-18.jpg',
+      '/WNR/wnr-19.jpg',
+      '/WNR/wnr-20.jpg',
+      '/WNR/wnr-21.jpg'
     ],
     fullDescription: "A competition that challenges students to solve real world business and marketing problems.."
   },

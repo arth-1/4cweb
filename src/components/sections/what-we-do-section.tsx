@@ -15,7 +15,7 @@ const activities = [
         {
         icon: <Rocket className="w-10 h-10 text-accent" />,
         title: "Values",
-        description: "Valuesntegrity and curiosity guide our journey. We promote inclusivity, collaboration, and ethical leadership, enabling every participant to learn, grow, and excel. Our commitment is to support each other and build a dynamic, resilient marketing community."
+        description: "Integrity and curiosity guide our journey. We promote inclusivity, collaboration, and ethical leadership, enabling every participant to learn, grow, and excel. Our commitment is to support each other and build a dynamic, resilient marketing community."
     },
 
 ]
