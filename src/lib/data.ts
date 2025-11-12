@@ -43,7 +43,7 @@ export const EVENTS_DATA = [
 
 export const SUPER_CORE_MEMBERS = [
     { name: 'Karan Bedi', title: 'President', image: '/team/SuperCore/Karan_no_bg.png' },
-    { name: 'Anjani Sai ', title: 'Vice President', image: '/team/SuperCore/Anjani_no_bg.png' },
+    { name: 'Anjani Sai ', title: 'Secretary', image: '/team/SuperCore/Anjani_no_bg.png' },
     { name: 'Ritwik Sharma', title: 'Vice President', image: '/team/SuperCore/Ritwik_no_bg.png' },
     { name: 'Neerav Reddy', title: 'Vice President', image: '/team/SuperCore/Neerav_no_bg.png' },
     { name: 'Vansh Patel', title: 'Vice President', image: '/team/SuperCore/Vansh_no_bg.png' },
